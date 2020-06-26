@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  background-image: url(../johannes-plenio-RwHv7LgeC7s-unsplash.png);
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100vh;
+}
+
+@-webkit-keyframes open {
+  0% {
+    opacity: 0%;
+    -webkit-transform: matrix(0.001, 0, 0, 0.001, -300, 170);
+            transform: matrix(0.001, 0, 0, 0.001, -300, 170);
+    border-radius: 500px;
+  }
+  100% {
+    opacity: 100%;
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+            transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+
+@keyframes open {
+  0% {
+    opacity: 0%;
+    -webkit-transform: matrix(0.001, 0, 0, 0.001, -300, 170);
+            transform: matrix(0.001, 0, 0, 0.001, -300, 170);
+    border-radius: 500px;
+  }
+  100% {
+    opacity: 100%;
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+            transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+
+@-webkit-keyframes close {
+  0% {
+    opacity: 100%;
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+            transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+  100% {
+    opacity: 0%;
+    -webkit-transform: matrix(0.001, 0, 0, 0.001, -300, 170);
+            transform: matrix(0.001, 0, 0, 0.001, -300, 170);
+    border-radius: 500px;
+  }
+}
+
+@keyframes close {
+  0% {
+    opacity: 100%;
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+            transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+  100% {
+    opacity: 0%;
+    -webkit-transform: matrix(0.001, 0, 0, 0.001, -300, 170);
+            transform: matrix(0.001, 0, 0, 0.001, -300, 170);
+    border-radius: 500px;
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.container .left {
+  background: #611818;
+  width: 20vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.container .left #explore-closed {
+  color: white;
+  position: fixed;
+  top: 45%;
+  left: 3%;
+}
+
+.container .left #explore-closed h1 {
+  letter-spacing: 0.25rem;
+  font-size: 14vw;
+  margin: 0 auto;
+}
+
+.container .left #explore-closed span {
+  position: absolute;
+  left: 100px;
+  display: inline;
+  top: 250px;
+  cursor: pointer;
+}
+
+.container .left #explore-closed span p {
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.container .left #explore-open {
+  color: black;
+  width: 600px;
+  background: white;
+  margin: 50px;
+  position: relative;
+  top: 15vh;
+  left: 100px;
+}
+
+.container .left #explore-open i {
+  color: #611818;
+  padding-left: 575px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.container .left #explore-open .inner {
+  text-align: left;
+  padding: 50px;
+}
+
+.container .left #explore-open .inner h2 {
+  color: #611818;
+  font-family: serif;
+  font-size: 80px;
+  padding-bottom: 20px;
+  display: inline;
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), -webkit-gradient(linear, left top, right top, from(#611818), to(white));
+  background-image: linear-gradient(transparent, transparent), linear-gradient(transparent, transparent), linear-gradient(to right, #611818, white);
+  background-repeat: no-repeat;
+  background-position: 100%, 100%, 0 100%;
+  background-size: 100% 2px;
+}
+
+.container .left #explore-open .inner p {
+  padding-top: 30px;
+  letter-spacing: 1.5px;
+  font-family: serif;
+  line-height: 25px;
+}
+
+.container .left #explore-open .inner button {
+  color: white;
+  letter-spacing: 2px;
+  padding: 20px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#611818), to(#61181884));
+  background-image: linear-gradient(to right, #611818, #61181884);
+  cursor: pointer;
+}
+
+.container .fa-stack {
+  padding-right: 20px;
+  padding-bottom: 75px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  color: white;
+}
+
+.show {
+  display: inline-block;
+}
+
+.hide {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
